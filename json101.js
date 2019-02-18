@@ -5,15 +5,15 @@ JSON 101
 
 //ES6 function syntax
 const toJSON = strings => {
-  jsonObj = {
+  return {
     length: strings.length,
     sentence: strings.join(" ")
   };
-  return jsonObj;
 };
 
 const getNames = people => {
-  return people.map((person) => {return person.name});
+  // return people.map((person) => {return person.name});
+  return people.map(person => person.name);
 };
 
 const main = () => {
