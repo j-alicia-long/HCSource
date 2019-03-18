@@ -29,8 +29,8 @@ class InputPanel extends Component {
   render() {
     return (
       <div className="InputPanel">
-        <input type="text" value={this.state.task} onChange={(e)=>this.updateTask(e.target.value)}></input>
-        <input type="text" value={this.state.due} onChange={(e)=>this.updateDue(e.target.value)}></input>
+        Task: <input type="text" value={this.state.task} onChange={(e)=>this.updateTask(e.target.value)}></input>
+        Due Date: <input type="text" value={this.state.due} onChange={(e)=>this.updateDue(e.target.value)}></input>
         <button onClick={this.buttonOnClick}>+Add Task</button>
       </div>
     );
